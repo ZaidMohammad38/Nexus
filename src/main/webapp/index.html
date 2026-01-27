@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #2563eb, #1e40af);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #dbeafe;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: #93c5fd;
+        }
+
+        .section-title p {
+            color: #9ca3af;
+            margin-top: 10px;
+        }
+
+        .about {
+            background-color: #020617;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            color: #cbd5f5;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #020617;
+            padding: 25px;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #60a5fa;
+        }
+
+        .card p {
+            color: #c7d2fe;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background-color: #020617;
+            text-align: center;
+            padding: 20px;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>DevOps Platform</h1>
+        <p>Build • Test • Deploy • Monitor</p>
+    </header>
+
+    <!-- ABOUT DEVOPS -->
+    <section class="container">
+        <div class="section-title">
+            <h2>What is DevOps?</h2>
+            <p>Culture, tools, and practices that increase delivery speed</p>
+        </div>
+
+        <div class="about">
+            <p>
+                DevOps is a combination of development and operations that focuses on
+                continuous integration, continuous delivery, automation, monitoring,
+                and collaboration to deliver high-quality software faster and reliably.
+            </p>
+        </div>
+    </section>
+
+    <!-- DEVOPS LIFECYCLE -->
+    <section class="container">
+        <div class="section-title">
+            <h2>DevOps Lifecycle</h2>
+            <p>From code to production</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Plan</h3>
+                <p>Requirement gathering, sprint planning, and roadmap creation.</p>
+            </div>
+
+            <div class="card">
+                <h3>Develop</h3>
+                <p>Writing clean code using Git-based version control systems.</p>
+            </div>
+
+            <div class="card">
+                <h3>Build & Test</h3>
+                <p>CI pipelines to automatically build and test applications.</p>
+            </div>
+
+            <div class="card">
+                <h3>Deploy</h3>
+                <p>Automated deployments using containers and cloud platforms.</p>
+            </div>
+
+            <div class="card">
+                <h3>Monitor</h3>
+                <p>Logging, monitoring, and alerting for system health.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Popular DevOps Tools</h2>
+            <p>Industry standard technologies</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Git & GitHub</h3>
+                <p>Source code management and collaboration.</p>
+            </div>
+
+            <div class="card">
+                <h3>Jenkins</h3>
+                <p>Continuous Integration and Continuous Delivery.</p>
+            </div>
+
+            <div class="card">
+                <h3>Docker</h3>
+                <p>Containerization for consistent environments.</p>
+            </div>
+
+            <div class="card">
+                <h3>Kubernetes</h3>
+                <p>Container orchestration and scaling.</p>
+            </div>
+
+            <div class="card">
+                <h3>AWS / Azure</h3>
+                <p>Cloud infrastructure and services.</p>
+            </div>
+
+            <div class="card">
+                <h3>Prometheus & Grafana</h3>
+                <p>Monitoring, metrics, and visualization.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 DevOps Platform | Designed for Learning & Production
+    </footer>
+
+</body>
+</html>
